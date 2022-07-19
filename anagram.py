@@ -31,7 +31,10 @@ class Solution:
         # return type: bool
 
         # TODO: Write code below to return a bool with the solution to the prompt
-        return a == b[ ::-1]
+        first = list(a)
+        second = list(b)
+    
+        return(set(first) == set(second))
 
 def main():
     string1 = input().strip()
